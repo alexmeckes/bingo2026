@@ -1,0 +1,116 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading,
+.error,
+.notFound {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.error h2,
+.notFound h2 {
+  margin-bottom: 0.5rem;
+}
+
+.error p,
+.notFound p {
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.retryButton,
+.homeLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.retryButton:hover,
+.homeLink:hover {
+  background: var(--color-primary-hover);
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.backLink {
+  display: inline-block;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.backLink:hover {
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.shareSection {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.shareLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.shareRow {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.shareInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  background: var(--color-bg);
+}
+
+.copyButton {
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.copyButton:hover {
+  background: var(--color-primary-hover);
+}
