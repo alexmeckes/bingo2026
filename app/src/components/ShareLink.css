@@ -1,0 +1,29 @@
+.share-link {
+  display: inline-block;
+}
+
+.share-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.share-btn:hover {
+  background: #e0e0e0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .share-btn {
+    background: #3a3a3a;
+    color: #fff;
+  }
+
+  .share-btn:hover {
+    background: #4a4a4a;
+  }
+}

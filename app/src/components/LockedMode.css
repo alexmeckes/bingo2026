@@ -1,0 +1,40 @@
+.locked-mode {
+  padding-bottom: 2rem;
+}
+
+.locked-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.locked-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.stats {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.marked-count {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.stats-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+@media (prefers-color-scheme: dark) {
+  .locked-header h1 {
+    color: #fff;
+  }
+}

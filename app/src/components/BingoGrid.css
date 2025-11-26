@@ -1,0 +1,133 @@
+.bingo-grid {
+  display: grid;
+  gap: 8px;
+  max-width: 100%;
+  aspect-ratio: 1;
+}
+
+.grid-cell {
+  aspect-ratio: 1;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid-cell:hover:not(.free-space):not(.empty) {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.grid-cell.marked {
+  background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);
+}
+
+.grid-cell.free-space {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  cursor: default;
+}
+
+.grid-cell.empty {
+  background: #e0e0e0;
+  cursor: default;
+}
+
+.cell-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.cell-content .prediction-text {
+  font-size: clamp(0.6rem, 2vw, 0.85rem);
+  color: #333;
+  line-height: 1.2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.grid-cell.marked .prediction-text {
+  color: #1b5e20;
+}
+
+.cell-content .prediction-author {
+  font-size: clamp(0.5rem, 1.5vw, 0.7rem);
+  color: #888;
+  margin-top: 4px;
+}
+
+.grid-cell.marked .prediction-author {
+  color: #2e7d32;
+}
+
+.cell-content .checkmark {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  color: #1b5e20;
+}
+
+.grid-cell.free-space .checkmark {
+  color: white;
+}
+
+.cell-content.free {
+  color: white;
+}
+
+.free-label {
+  font-weight: bold;
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+}
+
+.cell-content.empty .empty-label {
+  color: #999;
+  font-size: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .grid-cell {
+    background: #2a2a2a;
+  }
+
+  .grid-cell.empty {
+    background: #1a1a1a;
+  }
+
+  .cell-content .prediction-text {
+    color: #fff;
+  }
+
+  .grid-cell.marked .prediction-text {
+    color: #1b5e20;
+  }
+
+  .cell-content .prediction-author {
+    color: #888;
+  }
+}
+
+@media (max-width: 480px) {
+  .bingo-grid {
+    gap: 4px;
+  }
+
+  .grid-cell {
+    border-radius: 4px;
+  }
+
+  .cell-content {
+    padding: 4px;
+  }
+}

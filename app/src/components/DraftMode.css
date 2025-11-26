@@ -1,0 +1,222 @@
+.draft-mode {
+  padding-bottom: 2rem;
+}
+
+.draft-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.draft-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.progress-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f0f4ff;
+  border-radius: 12px;
+}
+
+.progress-text {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.progress-text .count {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.grid-info {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-form input {
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.add-form input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-form button {
+  padding: 0.875rem;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e53935;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.predictions-list {
+  margin-bottom: 2rem;
+}
+
+.predictions-list h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.predictions-list .empty {
+  color: #888;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.predictions-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.predictions-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.prediction-content {
+  flex: 1;
+}
+
+.prediction-text {
+  display: block;
+  color: #333;
+}
+
+.prediction-author {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: #e53935;
+}
+
+.lock-section {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.lock-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lock-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #ccc;
+}
+
+.lock-hint {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.lock-warning {
+  color: #ff9800;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .draft-header h1 {
+    color: #fff;
+  }
+
+  .progress-section {
+    background: #2a2a3d;
+  }
+
+  .progress-text {
+    color: #fff;
+  }
+
+  .grid-info {
+    color: #aaa;
+  }
+
+  .add-form input {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #fff;
+  }
+
+  .predictions-list h2 {
+    color: #fff;
+  }
+
+  .predictions-list .empty {
+    background: #2a2a2a;
+    color: #888;
+  }
+
+  .predictions-list li {
+    background: #2a2a2a;
+  }
+
+  .prediction-text {
+    color: #fff;
+  }
+
+  .lock-section {
+    border-color: #444;
+  }
+}
